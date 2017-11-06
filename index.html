@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Myles Murphy</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="images/favicon.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="parallax/parallax.min.js"></script>
+	</head>
+
+	<body>
+
+		<header class="page-header">
+			<div class="navbar">
+				<a href="#top"><p class="logo">Myles Murphy</p></a>
+				<nav>
+					<ul>
+					  <li><a href="#about">About</a></li>
+					  <li><a href="#achievements">Achievements</a></li>
+					  <li><a href="#experience">Experience</a></li>
+					  <li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="square" id="top" style="height: 88px;"></div>
+		
+		<div>
+
+		<h1 id="about">About</h1>
+
+		<table style="width:100%;">
+
+			<td style="width:25%;">	<img class="img-circle" src="images/Myles.jpg" alt="Picture of Myles" id="Myles"></img>	</td>
+
+			<td valign="top">
+				<p style="padding: 25px;">
+					
+				</p>
+			</td>
+
+		</table>
+
+		</div>
+
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/background2.jpeg"></div>
+
+		<h1 id="achievements">Education and Achievements</h1>
+
+		<p>
+			<ul style="font-size: 35px; color: black; list-style-type:square; padding-left: 20%">
+			  <li>Governor’s Award for Outstanding Leadership in Youth</li>
+			  <li>Lettered in Theater</li>
+			  <li>Field Based Science Wilderness Award</li>
+			  <li>“Best” APCS TA Computer Science Class</li>
+			  <li>Compassion Award given by The Rose House Hospice Care</li>
+			</ul>
+		</p>
+
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/background3.jpeg"></div>
+
+		<h1 id="experience">Experience</h1>
+
+		<p style="font-size: 35px; color: black; padding: 10px;" align="center">
+			<b>Server, Head Cook,</b> February 2013 to September 2017
+			<br>
+			Snuffy’s Malt Shop, Edina, MN
+		</p>
+
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/background4.jpeg"></div>
+
+		<h1 id="contact">Contact</h1>
+
+		<p style="font-size: 35px; color: black; padding: 10px;" align="center">
+			murphy10@stolaf.edu
+			<br>
+			<br>
+			612-655-1863
+			<br>
+		</p>
+
+		<div class="square" style="height: 100px;">
+			<p style="font-size: 12px; color: white; padding: 10px;" align="center">
+				<br>
+				Layout created by Myles Murphy - Segments of code acquired through various fair-use resources and tutorials
+				<br>
+				Background images taken from Google images, and are labeled for reuse
+			</p>
+		</div>
+
+		<!-- SCRIPTS! -->
+		<script language="javascript">
+			$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			        || location.hostname == this.hostname) {
+
+			        var target = $(this.hash);
+			        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			           if (target.length) {
+			             $('html,body').animate({
+			                 scrollTop: target.offset().top
+			            }, 1000);
+			            return false;
+			        }
+			    }
+			});
+		</script>
+
+		<script>
+		(function($){
+		  $(function(){  
+		    var scroll = $(document).scrollTop();
+		    var headerHeight = $('.page-header').outerHeight();
+		    
+		    $(window).scroll(function() {
+		      var scrolled = $(document).scrollTop();
+		      if (scrolled > headerHeight){
+		        $('.page-header').addClass('off-canvas');
+		      } else {
+		        $('.page-header').removeClass('off-canvas');
+		      }
+
+		        if (scrolled > scroll){
+		         $('.page-header').removeClass('fixed');
+		        } else {
+		        $('.page-header').addClass('fixed');
+		        }             
+		      scroll = $(document).scrollTop();  
+		     });
+		       
+		   });
+		})(jQuery); 
+		</script>
+
+
+
+	</body>
+
+</html>
