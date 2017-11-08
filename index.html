@@ -5,14 +5,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Myles Murphy</title>
-		<link rel="stylesheet" href="style.css">
+
+		<link rel="stylesheet" media="all" href="style.css" />
+		<link rel="stylesheet" media="only screen and (max-width: 800px)" href="style.css" />
 		<link rel="icon" href="images/favicon.png">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="parallax/parallax.min.js"></script>
 	</head>
 
 	<body>
-
+		<!-- Header -->
 		<header class="page-header">
 			<div class="navbar">
 				<a href="#top"><p class="logo">Myles Murphy</p></a>
@@ -27,72 +30,127 @@
 			</div>
 		</header>
 
-		<div class="square" id="top" style="height: 88px;"></div>
+		<div class="square" id="top" style="height: 88px;"></div> <!-- Parallax background image -->
 		
-		<div>
-
-		<h1 id="about">About</h1>
-
-		<table style="width:100%;">
-
-			<td style="width:25%;">	<img class="img-circle" src="images/Myles.jpg" alt="Picture of Myles" id="Myles"></img>	</td>
-
-			<td valign="top">
-				<p style="padding: 25px;">
-					
-				</p>
-			</td>
-
-		</table>
-
+		<!-- About -->
+		<div class="content">
+			<h1 id="about">About</h1>
+			<table style="width:100%;">
+				<td style="width:25%;">	<img class="img-circle" src="images/Myles.jpg" alt="Picture of Myles" id="Myles"></img>	</td>
+				<td valign="top">
+					<p style="padding: 25px;">
+						
+					</p>
+				</td>
+			</table>
 		</div>
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/background2.jpeg"></div>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/back00.png"></div> <!-- Parallax background image -->
 
-		<h1 id="achievements">Education and Achievements</h1>
+		<!-- Achievements -->
+		<div class="content">
+			<h1 id="achievements">Education and Achievements</h1>
+			<p>
+				<center>
+					Bachelor of Arts, degree anticipated May 2020
+					<br>
+					St. Olaf College, Northfield, Minnesota
+					<br>
+					Major(s):  Computer Science and Japanese
+				</center>
+				<ul style="font-size: 25px; color: black; list-style-type:square; padding-left: 20%; padding-right: 20%;">
+				  <li>Governor’s Award for Outstanding Leadership in Youth</li>
+				  	<ul>
+				  		<li>St. Louis Park’s “Park Program”</li>
+				  		<li>Volunteer position held for three consecutive summers</li>
+				  		<li>Led youth in daily activities including field games, art projects, and science walks</li>
+				  	</ul>
 
-		<p>
-			<ul style="font-size: 35px; color: black; list-style-type:square; padding-left: 20%">
-			  <li>Governor’s Award for Outstanding Leadership in Youth</li>
-			  <li>Lettered in Theater</li>
-			  <li>Field Based Science Wilderness Award</li>
-			  <li>“Best” APCS TA Computer Science Class</li>
-			  <li>Compassion Award given by The Rose House Hospice Care</li>
-			</ul>
-		</p>
+				  <li>Lettered in Theater</li>
+				  	<ul>
+				  		<li>Participant in Edina High School Theater Program</li>
+				  		<li>Chorus member in national performance of “Fiddler On The Roof” at the International Thespian Festival in Lincoln, NE</li>
+				  	</ul>
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/background3.jpeg"></div>
+				  <li>Field-Based Science Wilderness Award</li>
+				  	<ul>
+				  		<li>Highly selective award bestowed by staff from the Edina Field-Based Science Wilderness program to those who show exemplary skills and attitude during their Summer program</li>
+				  	</ul>
 
-		<h1 id="experience">Experience</h1>
+				  <li>“Best” Advanced Placement Computer Science Teacher’s Assistance Award</li>
+				  	<ul>
+				  		<li>Edina High School Computer Science Class</li>
+				  		<li>Assisted students in understanding basic CS principles</li>
+				  		<li>Tutored classmates for test-prep and assignments</li>
+				  		<li>Bug fixing</li>
+				  	</ul>
 
-		<p style="font-size: 35px; color: black; padding: 10px;" align="center">
-			<b>Server, Head Cook,</b> February 2013 to September 2017
-			<br>
-			Snuffy’s Malt Shop, Edina, MN
-		</p>
+				  <li>The Rose House Hospice Care Compassion Award</li>
+				  	<ul>
+				  		<li>Volunteered weekly, performing guitar and vocals for late stage dementia patients</li>
+				  		<li>Assisted with basic life needs</li>
+				  		<li>Assisted staff in meal preparation</li>
+				  		<li>Cleaned facilities</li>
+				  	</ul>
+				</ul>
+			</p>
+		</div>
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/background4.jpeg"></div>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/back00.png"></div> <!-- Parallax background image -->
 
-		<h1 id="contact">Contact</h1>
+		<!-- Experience -->
+		<div class="content">
+			<h1 id="experience">Experience</h1>
+			<p style="font-size: 35px; color: black; padding: 10px;" align="center">
+				<ul style="font-size: 25px; color: black; list-style-type:square; padding-left: 25%; padding-right: 25%;">
+					<li><b>Server, Head Cook,</b> February 2013 to September 2017</li>
+						<ul>
+							<li>Snuffy’s Malt Shop, Edina, MN</li>
+							<li>Trained new cooks</li>
+							<li>In charge of stocking</li>
+							<li>Full Time employment summer of 2017</li>
+						</ul>
+				</ul>
 
-		<p style="font-size: 35px; color: black; padding: 10px;" align="center">
-			murphy10@stolaf.edu
-			<br>
-			<br>
-			612-655-1863
-			<br>
-		</p>
+				<br>
+				<h1>Skills</h1>
+				<ul style="font-size: 25px; color: black; list-style-type:square; padding-left: 25%; padding-right: 25%;">
+					<li>Web Design</li>
+					<li>Custom PC Building</li>
+					<li>Programming languages:  C++,  Java,  Javascript,  HTML5,  CSS</li>
+					<li>Vegas Movie Studio 14</li>
+				</ul>
 
+
+			</p>
+		</div>
+
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/back00.png"></div> <!-- Parallax background image -->
+
+		<!-- Contact -->
+		<div>
+			<h1 id="contact">Contact</h1>
+			<p style="font-size: 35px; color: black; padding: 10px;" align="center">
+				murphy10@stolaf.edu
+				<br>
+				<br>
+				612-655-1863
+				<br>
+			</p>
+		</div>
+
+		<!-- Bottom information -->
 		<div class="square" style="height: 100px;">
 			<p style="font-size: 12px; color: white; padding: 10px;" align="center">
 				<br>
-				Layout created by Myles Murphy - Segments of code acquired through various fair-use resources and tutorials
+				Layout created by Myles Murphy
 				<br>
-				Background images taken from Google images, and are labeled for reuse
+				Segments of code acquired through various fair-use resources and tutorials
 			</p>
 		</div>
 
 		<!-- SCRIPTS! -->
+		<!-- Smooth scrolling -->
 		<script language="javascript">
 			$('a[href*=#]:not([href=#])').click(function() {
 			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -110,6 +168,7 @@
 			});
 		</script>
 
+		<!-- Smooth header -->
 		<script>
 		(function($){
 		  $(function(){  
