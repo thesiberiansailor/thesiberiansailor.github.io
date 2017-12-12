@@ -26,6 +26,15 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 350px;
+  font-family: 'Work Sans',serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
 nav {
 	float: right;
   font-weight: 400;
