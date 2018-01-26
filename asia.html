@@ -12,6 +12,46 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="parallax/parallax.min.js"></script>
+
+		<style>
+		.parallax {
+		    /* The image used */
+		    
+
+		    /* Set a specific height */
+		    min-height: 350px; 
+
+		    /* Create the parallax scrolling effect */
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}
+		</style>
+
+		<style>
+		button {
+		    background-color: #4CAF50; /* Green */
+		    border: none;
+		    color: white;
+		    padding: 16px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    -webkit-transition-duration: 0.4s; /* Safari */
+		    transition-duration: 0.4s;
+		    cursor: pointer;
+		    background-color: white;
+		    color: black;
+		    border: 2px solid #e7e7e7;
+		}
+
+		button:hover{background-color: #e7e7e7;}
+
+		</style>
+
 	</head>
 
 	<body>
@@ -30,7 +70,9 @@
 			</div>
 		</header>
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/greatWave.jpg"><h2>FALL</h2></div> <!-- Parallax background image -->
+		<div class="square" id="top" style="height: 88px;"></div> <!-- Parallax background image -->
+
+		<div class="parallax" style="background-image: url(images/greatWave.jpg)"><h2>FALL</h2></div> <!-- Parallax background image -->
 
 		<div class="content" id="Fall" style="text-align: center;">
 		FALL
@@ -40,27 +82,45 @@
 
 		</div>
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/mtFuji.jpg"><h2>INTERIM</h2></div> <!-- Parallax background image -->
+		<div class="parallax" style="background-image: url(images/mtFuji.jpg);"><h2>INTERIM</h2></div> <!-- Parallax background image -->
 
-		<div class="content" id="Interim" style="text-align: center;">
+		<div class="content" id="Interim" style="text-align: center; overflow: auto; width: 100%;">
 
-			<iframe style="width:75%; height:450px;" src="https://docs.google.com/document/d/e/2PACX-1vSFo-wcg4-txuoSvQJg_1BaWfub28TJxBTE4FQBomgxe-vL4Wd7I_y20-7A_ErMsi4t4c3mfvd-EcK3/pub?embedded=true"></iframe>
+			<h1>Click to see</h1>
 
-			<br>
+			<button onclick="toggleButton(1)">Field Notes: Shanghai</button>
 
-			<iframe src="https://docs.google.com/document/d/e/2PACX-1vQ66kycTDnBmVcy85rFNfA7bmn38A2hgk1Apu3WJJtQp0nQWXkFwtJxIUhYBjpO12fI1PbI-aTbg0Bm/pub?embedded=true"></iframe>
-
-			<br>
-
-			<iframe src="https://docs.google.com/document/d/e/2PACX-1vS2oWeN0BeGWENBsvBQTgfyYKOArcnTQLzN72waPsySZj5uFXAqvcSRUnYOQhhaEQoKR6TXF4jl-bZh/pub?embedded=true"></iframe>
+			<div id=1 style="display:none; padding: 25px 0px;">
+			  <iframe style="width:75%; height:450px;" src="https://docs.google.com/document/d/e/2PACX-1vSFo-wcg4-txuoSvQJg_1BaWfub28TJxBTE4FQBomgxe-vL4Wd7I_y20-7A_ErMsi4t4c3mfvd-EcK3/pub?embedded=true"></iframe>
+			</div>
 
 			<br>
 
-			<iframe id="scavenger" src="https://docs.google.com/document/d/e/2PACX-1vTpXXcwrvq50i0D4PEEv3vRA5uEuR3nili8Q_1ma1VaRjTjV_o4sKYhNaCTuKAcF8lWi6PqXb4hBpDi/pub?embedded=true"></iframe>
+			<button onclick="toggleButton(2)">Field Notes: Hiroshima</button>
+
+			<div id=2 style="display:none; padding: 25px 0px;">
+				<iframe style="width:75%; height:450px;" src="https://docs.google.com/document/d/e/2PACX-1vQ66kycTDnBmVcy85rFNfA7bmn38A2hgk1Apu3WJJtQp0nQWXkFwtJxIUhYBjpO12fI1PbI-aTbg0Bm/pub?embedded=true"></iframe>
+			</div>
+
+			<br>
+
+			<button onclick="toggleButton(3)">Screens Assignment</button>
+
+			<div id=3 style="display:none; padding: 25px 0px;">
+				<iframe style="width:75%; height:450px;" src="https://docs.google.com/document/d/e/2PACX-1vS2oWeN0BeGWENBsvBQTgfyYKOArcnTQLzN72waPsySZj5uFXAqvcSRUnYOQhhaEQoKR6TXF4jl-bZh/pub?embedded=true"></iframe>
+			</div>
+
+			<br>
+
+			<button onclick="toggleButton(4)">Scavenger Hunt</button>
+
+			<div id=4 style="display:none; padding: 25px 0px;">
+				<iframe style="width:75%; height:450px;" id="scavenger" src="https://docs.google.com/document/d/e/2PACX-1vTpXXcwrvq50i0D4PEEv3vRA5uEuR3nili8Q_1ma1VaRjTjV_o4sKYhNaCTuKAcF8lWi6PqXb4hBpDi/pub?embedded=true"></iframe>
+			</div>
 
 		</div>
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/sushi.jpeg"><h2>SPRING</h2></div> <!-- Parallax background image -->
+		<div class="parallax" style="background-image: url(images/sushi.jpeg)"><h2>SPRING</h2></div> <!-- Parallax background image -->
 
 		<div class="content" id="Spring" style="text-align: center;">SPRING</div>
 
@@ -120,6 +180,17 @@
 		       
 		   });
 		})(jQuery); 
+		</script>
+
+		<script>
+		function toggleButton(divID) {
+		    var x = document.getElementById(divID);
+		    if (x.style.display === "none") {
+		        x.style.display = "block";
+		    } else {
+		        x.style.display = "none";
+		    }
+		}
 		</script>
 
 
