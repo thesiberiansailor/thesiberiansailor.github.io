@@ -1,213 +1,348 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Myles Murphy</title>
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Myles Murphy</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-		<link rel="stylesheet" media="all" href="style.css" />
-		<link rel="stylesheet" media="only screen and (max-width: 800px)" href="style.css" />
-		<link rel="icon" href="images/favicon.png">
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="parallax/parallax.min.js"></script>
-	</head>
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-	<body>
-		<!-- Header -->
-		<header class="page-header">
-			<div class="navbar">
-				<a href="#top"><p class="logo">Myles Murphy</p></a>
-				<nav class="menu">
-					<ul class="clearfix">
-					  	<li><a href="#about">About</a></li>
-					  	<li><a href="#achievements">Achievements</a></li>
-					  	<li><a href="#experience">Experience</a></li>
-					  	<li><a href="#contact">Contact</a></li>
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 
-						<li><a href="asia.html">Documenting Asia</a></li>
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
 
-					</ul>
-				</nav>
-			</div>
-		</header>
+</head>
 
-		<div class="square" id="top" style="height: 88px;"></div> <!-- Parallax background image -->
-		
-		<!-- About -->
-		<div class="content">
-			<h1 id="about">About</h1>
-			<table style="width:100%;">
-				<td style="width:25%;" align="center">	<img class="img-circle" src="images/Myles.jpg" alt="Picture of Myles" id="Myles"></img>	</td>
-				<td valign="top">
-					<p style="padding-left: 10%; padding-right: 10%; line-height: 150%;">
-						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;My name is Myles Murphy.  I am an aspiring computer programmer. Growing up, I always felt inclined towards technology.  It began with an interest in video games; an interest which eventually led me to wonder:  how is all this actually <i>created?</i>
-						<br><br>
-						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Over the years, I have dedicated myself to answering this question.  But more than that, I have sought to learn everything there is to know about computer technology and its broader applications.  Through high school programming classes, college studies, and my own research, I continually strive to acquire more knowledge of both the existing and emerging technological world. My passions include software design, video game design, web design, and custom PC building.
-						<br><br>
-						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;I am currently an undergraduate seeking a double major in Computer Science and Japanese at St. Olaf College in Northfield, Minnesota.  Outside of Computer Science, hobbies of mine include enjoying the outdoors, camping, playing guitar, and spending time with friends.
+<body>
 
-					</p>
-				</td>
-			</table>
-		</div>
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/minneapolis.jpg"></div> <!-- Parallax background image -->
+      <nav id="nav-wrap">
 
-		<!-- Achievements -->
-		<div class="content">
-			<h1 id="achievements">Education and Achievements</h1>
-			<p>
-				<center>
-					Bachelor of Arts, degree anticipated May 2020
-					<br>
-					St. Olaf College, Northfield, Minnesota
-					<br>
-					Major(s):  Computer Science and Japanese
-				</center>
-				<ul style="font-size: 25px; color: black; list-style-type:square; padding-left: 20%; padding-right: 20%;">
-				  <li>Governor’s Award for Outstanding Leadership in Youth</li>
-				  	<ul>
-				  		<li>St. Louis Park’s “Park Program”</li>
-				  		<li>Volunteer position held for three consecutive summers</li>
-				  		<li>Led youth in daily activities including field games, art projects, and science walks</li>
-				  	</ul>
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-				  <li>Lettered in Theater</li>
-				  	<ul>
-				  		<li>Participant in Edina High School Theater Program</li>
-				  		<li>Chorus member in national performance of “Fiddler On The Roof” at the International Thespian Festival in Lincoln, NE</li>
-				  	</ul>
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
 
-				  <li>Field-Based Science Wilderness Award</li>
-				  	<ul>
-				  		<li>Highly selective award bestowed by staff from the Edina Field-Based Science Wilderness program to those who show exemplary skills and attitude during their Summer program</li>
-				  	</ul>
+      </nav> <!-- end #nav-wrap -->
 
-				  <li>“Best” Advanced Placement Computer Science Teacher’s Assistance Award</li>
-				  	<ul>
-				  		<li>Edina High School Computer Science Class</li>
-				  		<li>Assisted students in understanding basic CS principles</li>
-				  		<li>Tutored classmates for test-prep and assignments</li>
-				  		<li>Bug fixing</li>
-				  	</ul>
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Hi, I'm Myles Murphy</h1>
+            <h3>Raised in Minneapolis, passions of mine include <span>software design</span>, <span>hardware design</span> and <span>pretty much the general IT.</span> Personal projects of mine range from
+            programming a Book Inventory Systems in C++ to using a raspberry pi as a personal <i>Minecraft</i> server.
+            Scroll down to learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.facebook.com/myles.murphy.71"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/mylesmorganmurphy"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/mylesthemurph/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+         </div>
+      </div>
 
-				  <li>The Rose House Hospice Care Compassion Award</li>
-				  	<ul>
-				  		<li>Volunteered weekly, performing guitar and vocals for late stage dementia patients</li>
-				  		<li>Assisted with basic life needs</li>
-				  		<li>Assisted staff in meal preparation</li>
-				  		<li>Cleaned facilities</li>
-				  	</ul>
-				</ul>
-			</p>
-		</div>
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/sunset.jpg"></div> <!-- Parallax background image -->
-
-		<!-- Experience -->
-		<div class="content">
-			<h1 id="experience">Experience</h1>
-			<p style="font-size: 35px; color: black; padding: 10px;" align="center">
-				<ul style="font-size: 25px; color: black; list-style-type:square; padding-left: 25%; padding-right: 25%;">
-					<li><b>Server, Head Cook,</b> February 2013 to September 2017</li>
-						<ul>
-							<li>Snuffy’s Malt Shop, Edina, MN</li>
-							<li>Trained new cooks</li>
-							<li>In charge of stocking</li>
-							<li>Full Time employment summer of 2017</li>
-						</ul>
-				</ul>
-
-				<br>
-				<h1>Skills</h1>
-				<ul style="font-size: 25px; color: black; list-style-type:square; padding-left: 25%; padding-right: 25%;">
-					<li>Web Design</li>
-					<li>Custom PC Building</li>
-					<li>Programming languages:  C++,  Java,  Javascript,  HTML5,  CSS</li>
-					<li>Vegas Movie Studio 14</li>
-				</ul>
-
-			<br>
-			<br>
-
-			</p>
-		</div>
-
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/sunrise.jpg"></div> <!-- Parallax background image -->
-
-		<!-- Contact -->
-		<div>
-			<h1 id="contact">Contact</h1>
-			<p style="font-size: 35px; color: black; padding: 10px;" align="center">
-				murphy10@stolaf.edu
-				<br>
-				<br>
-				612-655-1863
-				<br>
-			</p>
-		</div>
-
-		<!-- Bottom information -->
-		<div class="square" style="height: 100px;">
-			<p style="font-size: 12px; color: white; padding: 10px;" align="center">
-				<br>
-				Layout created by Myles Murphy
-				<br>
-				Segments of code acquired through various fair-use resources and tutorials
-				<br>
-				Pictures labeled for re-use
-			</p>
-		</div>
-
-		<!-- SCRIPTS! -->
-		<!-- Smooth scrolling -->
-		<script language="javascript">
-			$('a[href*=#]:not([href=#])').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-			        || location.hostname == this.hostname) {
-
-			        var target = $(this.hash);
-			        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			           if (target.length) {
-			             $('html,body').animate({
-			                 scrollTop: target.offset().top
-			            }, 1000);
-			            return false;
-			        }
-			    }
-			});
-		</script>
-
-		<!-- Smooth header -->
-		<script>
-		(function($){
-		  $(function(){  
-		    var scroll = $(document).scrollTop();
-		    var headerHeight = $('.page-header').outerHeight();
-		    
-		    $(window).scroll(function() {
-		      var scrolled = $(document).scrollTop();
-		      if (scrolled > headerHeight){
-		        $('.page-header').addClass('off-canvas');
-		      } else {
-		        $('.page-header').removeClass('off-canvas');
-		      }
-
-		        if (scrolled > scroll){
-		         $('.page-header').removeClass('fixed');
-		        } else {
-		        $('.page-header').addClass('fixed');
-		        }             
-		      scroll = $(document).scrollTop();  
-		     });
-		       
-		   });
-		})(jQuery); 
-		</script>
+   </header> <!-- Header End -->
 
 
-	</body>
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>My name is Myles Murphy. I am an aspiring computer programmer. Growing up, I always felt inclined towards technology.
+              It began with an interest in video games; an interest which eventually led me to wonder: how is all this actually created?
+              Over the years, I have dedicated myself to answering this question.
+              But more than that, I have sought to learn everything there is to know about computer technology and its broader applications.
+              Through high school programming classes, college studies, and my own research, I continually strive to acquire more knowledge of both the existing and emerging technological world.
+              My passions include software design, video game design, web design, and custom PC building.
+              I am currently an undergraduate seeking a double major in Computer Science and Japanese at St. Olaf College in Northfield, Minnesota.
+              Outside of Computer Science, hobbies of mine include enjoying the outdoors, camping, playing guitar, and spending time with friends.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Myles Murphy</span><br>
+						   <span>5729 France Ave. S.<br>
+						         Edina, MN 55410 US
+                     </span><br>
+						   <span>(612)655-1863</span><br>
+                     <span>murphy10@stolaf.edu</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="files/MylesMResume.pdf" target="_blank" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                     <a href="files/MylesMResume.pdf" target="_blank" class="button"><i class="fa fa-download"></i>Download Portfolio</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>St. Olaf College</h3>
+                  <p class="info">Bachelor's in Computer Science and Japanese <span>&bull;</span> <em class="date">Expected May 2020</em></p>
+
+                  <p>
+                    Relevant coursework: Software Design, Hardware Design, Operating Systems, Cloud
+                    Computing, AP Computer Science
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Applebee’s International, Inc., Northfield, MN</h3>
+                  <p class="info">Server <span>&bull;</span> <em class="date">March, 2018 - Present</em></p>
+
+                  <ul style="list-style-type:disc;">
+                    <li>Engage directly with customers to provide prompt, accurate, and friendly service</li>
+                    <li>Facilitate a team environment to create an enjoyable dining experience</li>
+                  </ul>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Snuffy’s Malt Shop, Edina, MN</h3>
+                  <p class="info">Manager, Server <span>&bull;</span> <em class="date">February, 2013 - Present</em></p>
+
+                  <ul style="list-style-type:disc;">
+                    <li>Ensure swift and accurate work, while maintaining an enjoyable employee work environment</li>
+                    <li>Address issues with customers immediately for successful resolution</li>
+                  </ul>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Edina High School, Edina, MN</h3>
+                  <p class="info">Computer Science T.A <span>&bull;</span> <em class="date">Sep. 2015 - May, 2016</em></p>
+
+                  <ul style="list-style-type:disc;">
+                    <li>Worked with new learners studying computer science with the class focusing on Java</li>
+                    <li>Guided explanations of new concepts and helped with bug-fixing and analyzing code</li>
+                  </ul>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+   </section> <!-- Resume Section End-->
+
+   <!-- portfolio
+   ================================================== -->
+   <section id="portfolio">
+
+     <div class="row portfolio">
+
+        <div class="three columns header-col">
+           <h1><span>Project Experience</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+           <div class="row item">
+
+              <div class="twelve columns">
+
+                 <h3>Cloud Computing</h3>
+                 <p class="info">Chat-Bot AI <span>&bull;</span> <em class="date">February - April, 2018</em></p>
+
+                 <ul style="list-style-type:disc;">
+                   <li>Designed a Java based chat-bot that would interact with users through an expandable database of predetermined answers</li>
+                   <li>Integrated server-client model with additional access through an admin client</li>
+                   <li>Created and maintained server through Amazon Web Services EC2 instance</li>
+                 </ul>
+
+              </div>
+
+           </div> <!-- item end -->
+
+           <div class="row item">
+
+              <div class="twelve columns">
+
+                 <h3>Software Design</h3>
+                 <p class="info">Book Inventory <span>&bull;</span> <em class="date">April - May, 2017</em></p>
+
+                 <ul style="list-style-type:disc;">
+                   <li>Developed, in close collaboration with a small team, a C++ program designed to keep inventory for a bookstore</li>
+                   <li>Programmed the GUI utilizing OpenGL, while communicating with team members to incorporate the backend</li>
+                 </ul>
+
+              </div>
+
+           </div> <!-- item end -->
+
+        </div> <!-- main-col end -->
+
+     </div> <!-- End Work -->
+
+   </section> <!-- Resume Section End-->
+
+   <section id="contact">
+
+     <div class="row portfolio">
+
+        <div class="three columns header-col">
+           <h1><span>Contact</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+          <h2><span>Contact</span></h2>
+
+          <p>
+            Myles Murphy<br>
+            5729 France Ave. S.<br>
+            Edina, MN 55410 US<br>
+            (612)655-1863<br>
+            murphy10@stolaf.edu<br>
+          </p>
+
+        </div> <!-- main-col end -->
+
+     </div> <!-- End Work -->
+
+   </section> <!-- Resume Section End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+              <li><a href="https://www.facebook.com/myles.murphy.71"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/mylesmorganmurphy"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/mylesthemurph/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
 
 </html>
